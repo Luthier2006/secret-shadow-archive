@@ -8,11 +8,24 @@
     <meta name="author" content="LOVABLE Archive" />
     <meta name="keywords" content="cápsula do tempo, segredos, criptografia, privacidade, segurança digital" />
     
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
     <!-- PWA Meta Tags -->
-    <meta name="theme-color" content="#7c3aed" />
+    <meta name="theme-color" content="#8B5CF6" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Archive" />
+    <link rel="apple-touch-icon" href="/src/assets/archive-logo.png">
+    
+    <!-- Microsoft PWA Meta Tags -->
+    <meta name="msapplication-TileColor" content="#8B5CF6">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     
     <!-- Favicon -->
     <link rel="icon" href="/src/assets/archive-logo.png" type="image/png" />
@@ -30,5 +43,20 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
   </body>
 </html>

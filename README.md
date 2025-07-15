@@ -1,73 +1,55 @@
-# Welcome to your Lovable project
+# 🏛️ LOVABLE Archive - Cápsulas do Tempo Digitais
 
-## Project info
+> **"Preserve seus segredos no tempo com segurança militar e inteligência artificial"**
 
-**URL**: https://lovable.dev/projects/57874179-b30a-488e-988e-2f7709b78e4f
+## 🌐 **Status do Sistema**
 
-## How can I edit this code?
+- **✅ Frontend**: [https://lovable-frontend.onrender.com](https://lovable-frontend.onrender.com)
+- **✅ Backend**: [https://lovable-backend-l69c.onrender.com](https://lovable-backend-l69c.onrender.com)
+- **✅ Conexão**: Sistema integrado e funcionando
 
-There are several ways of editing your application.
+## 🚀 **Tecnologias Implementadas**
 
-**Use Lovable**
+### Frontend
+- ⚛️ React + TypeScript + Tailwind CSS
+- 🔐 Criptografia client-side (CryptoJS)
+- 📱 PWA completo com Service Worker
+- 🎨 Design dark moderno e responsivo
+- 🔄 Status de conexão em tempo real
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/57874179-b30a-488e-988e-2f7709b78e4f) and start prompting.
+### Backend  
+- 🚀 Node.js + Express com ES Modules
+- 🔥 Firebase Firestore + Authentication
+- 🤖 Integração Groq AI (Mixtral-8x7b)
+- 🛡️ Segurança: rate limiting, headers, validações
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🏗️ **Arquitetura**
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+Frontend (Render) ←→ Backend (Render) ←→ Firebase + Groq AI
+     ↓                    ↓
+   PWA Ready         Criptografia E2E
 ```
 
-**Edit a file directly in GitHub**
+## 📱 **PWA Features**
+- 📦 Botão de instalação automático
+- 🔄 Funciona offline com Service Worker
+- 📲 Ícone na tela inicial como app nativo
+- 🎨 Splash screen e tema customizado
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🔐 **Segurança**
+- 🔒 AES-256 client-side encryption
+- 🛡️ Rate limiting e headers de segurança  
+- 🚫 Proteção XSS/CSRF
+- 🧹 Sanitização de inputs
 
-**Use GitHub Codespaces**
+## 🚀 **Deploy**
+Sistema 100% funcional e deployado:
+- Frontend hospedado no Render
+- Backend hospedado no Render  
+- Conexão verificada e estável
+- PWA pronto para instalação
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/57874179-b30a-488e-988e-2f7709b78e4f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**✅ SISTEMA COMPLETO E OPERACIONAL!**

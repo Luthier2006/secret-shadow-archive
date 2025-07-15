@@ -1,0 +1,62 @@
+{
+  "name": "LOVABLE Archive - Cápsulas do Tempo Digitais",
+  "short_name": "Archive",
+  "description": "Plataforma segura para armazenar segredos criptografados em cápsulas do tempo digitais",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#8B5CF6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/placeholder.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/placeholder.svg",
+      "type": "image/svg+xml", 
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities", "security"],
+  "shortcuts": [
+    {
+      "name": "Criar Segredo",
+      "short_name": "Criar",
+      "description": "Criar nova cápsula do tempo",
+      "url": "/create",
+      "icons": [{ "src": "/placeholder.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "Meus Segredos",
+      "short_name": "Segredos",
+      "description": "Ver suas cápsulas do tempo",
+      "url": "/dashboard",
+      "icons": [{ "src": "/placeholder.svg", "sizes": "96x96" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/placeholder.svg",
+      "type": "image/svg+xml",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/placeholder.svg", 
+      "type": "image/svg+xml",
+      "sizes": "750x1334",
+      "form_factor": "narrow"
+    }
+  ]
+}
