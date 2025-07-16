@@ -57,7 +57,7 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-border/50 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © 2024 LOVABLE Archive. Todos os direitos reservados.
+            © 2025 - Archive. Todos os direitos reservados.
           </div>
           <div className="flex items-center text-sm text-muted-foreground">
             <span>Feito com</span>
