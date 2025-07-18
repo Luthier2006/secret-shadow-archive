@@ -57,8 +57,8 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-border/50 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © 2025 - Archive. Todos os direitos reservados. Criado por <a href="https://www.instagram.com/eros.black2006?igsh=MW11cHQwMHljdWVodw==">@eros.black2006 </a>
-            e <a href="https://www.instagram.com/levi_oliveira86?igsh=emQ1eXRqdXZ0YXZ4">@levi_oliveira86</a>.
+            © 2025 - Archive. Todos os direitos reservados. Desenvolvido por: <a href="https://www.instagram.com/levi_oliveira86" className="text-primary hover:text-primary-glow transition-colors" target="_blank" rel="noopener noreferrer">Ytallo Gabriel</a>
+            e <a href="https://www.instagram.com" className="text-primary hover:text-primary-glow transition-colors" target="_blank" rel="noopener noreferrer">Leandro Luiz</a>.
           </div>
           <div className="flex items-center text-sm text-muted-foreground">
             <span>Feito com</span>

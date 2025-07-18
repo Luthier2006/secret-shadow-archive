@@ -34,14 +34,14 @@ export const Header = () => {
             <Button 
               variant="ghost" 
               className="text-foreground hover:text-primary"
-              onClick={() => console.log('Login clicked')}
+              onClick={() => window.location.href = '/login'}
             >
               Entrar
             </Button>
             <Button 
               variant="archive" 
               size="lg"
-              onClick={() => console.log('Get started clicked')}
+              onClick={() => window.location.href = '/register'}
             >
               Começar Agora
             </Button>
@@ -75,7 +75,7 @@ export const Header = () => {
                 <Button 
                   variant="ghost" 
                   className="text-foreground hover:text-primary"
-                  onClick={() => console.log('Mobile login clicked')}
+                  onClick={() => window.location.href = '/login'}
                 >
                   Entrar
                 </Button>
@@ -83,7 +83,7 @@ export const Header = () => {
                   variant="archive" 
                   size="lg" 
                   className="w-full"
-                  onClick={() => console.log('Mobile get started clicked')}
+                  onClick={() => window.location.href = '/register'}
                 >
                   Começar Agora
                 </Button>

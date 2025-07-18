@@ -47,7 +47,7 @@ export const Hero = () => {
               variant="archive" 
               size="xl" 
               className="w-full sm:w-auto min-w-[200px]"
-              onClick={() => console.log('Create capsule clicked')}
+              onClick={() => window.location.href = '/register'}
             >
               <Lock className="w-5 h-5 mr-2" />
               Criar Primeira Cápsula
@@ -56,7 +56,7 @@ export const Hero = () => {
               variant="surface" 
               size="xl" 
               className="w-full sm:w-auto min-w-[200px]"
-              onClick={() => console.log('Learn more clicked')}
+              onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Clock className="w-5 h-5 mr-2" />
               Saber Mais
