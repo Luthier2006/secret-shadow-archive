@@ -43,11 +43,21 @@ export const Hero = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button variant="archive" size="xl" className="w-full sm:w-auto min-w-[200px]">
+            <Button 
+              variant="archive" 
+              size="xl" 
+              className="w-full sm:w-auto min-w-[200px]"
+              onClick={() => console.log('Create capsule clicked')}
+            >
               <Lock className="w-5 h-5 mr-2" />
               Criar Primeira Cápsula
             </Button>
-            <Button variant="surface" size="xl" className="w-full sm:w-auto min-w-[200px]">
+            <Button 
+              variant="surface" 
+              size="xl" 
+              className="w-full sm:w-auto min-w-[200px]"
+              onClick={() => console.log('Learn more clicked')}
+            >
               <Clock className="w-5 h-5 mr-2" />
               Saber Mais
             </Button>

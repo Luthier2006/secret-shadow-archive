@@ -31,10 +31,18 @@ export const Header = () => {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="ghost" className="text-foreground hover:text-primary">
+            <Button 
+              variant="ghost" 
+              className="text-foreground hover:text-primary"
+              onClick={() => console.log('Login clicked')}
+            >
               Entrar
             </Button>
-            <Button variant="archive" size="lg">
+            <Button 
+              variant="archive" 
+              size="lg"
+              onClick={() => console.log('Get started clicked')}
+            >
               Começar Agora
             </Button>
           </div>
@@ -64,10 +72,19 @@ export const Header = () => {
                 Sobre
               </a>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="ghost" className="text-foreground hover:text-primary">
+                <Button 
+                  variant="ghost" 
+                  className="text-foreground hover:text-primary"
+                  onClick={() => console.log('Mobile login clicked')}
+                >
                   Entrar
                 </Button>
-                <Button variant="archive" size="lg" className="w-full">
+                <Button 
+                  variant="archive" 
+                  size="lg" 
+                  className="w-full"
+                  onClick={() => console.log('Mobile get started clicked')}
+                >
                   Começar Agora
                 </Button>
               </div>
