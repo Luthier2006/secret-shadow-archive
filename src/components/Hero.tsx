@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Lock, Clock, Shield, Sparkles } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
@@ -47,7 +50,7 @@ export const Hero = () => {
               variant="archive" 
               size="xl" 
               className="w-full sm:w-auto min-w-[200px]"
-              onClick={() => window.location.href = '/register'}
+              onClick={() => navigate('/register')}
             >
               <Lock className="w-5 h-5 mr-2" />
               Criar Primeira Cápsula

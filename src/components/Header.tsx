@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Menu, X, Archive as ArchiveIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import archiveLogo from "@/assets/archive-logo.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="relative z-50 border-b border-border/50 backdrop-blur-xl bg-background/80">
@@ -34,14 +36,14 @@ export const Header = () => {
             <Button 
               variant="ghost" 
               className="text-foreground hover:text-primary"
-              onClick={() => window.location.href = '/login'}
+              onClick={() => navigate('/login')}
             >
               Entrar
             </Button>
             <Button 
               variant="archive" 
               size="lg"
-              onClick={() => window.location.href = '/register'}
+              onClick={() => navigate('/register')}
             >
               Começar Agora
             </Button>
@@ -75,7 +77,7 @@ export const Header = () => {
                 <Button 
                   variant="ghost" 
                   className="text-foreground hover:text-primary"
-                  onClick={() => window.location.href = '/login'}
+                  onClick={() => navigate('/login')}
                 >
                   Entrar
                 </Button>
@@ -83,7 +85,7 @@ export const Header = () => {
                   variant="archive" 
                   size="lg" 
                   className="w-full"
-                  onClick={() => window.location.href = '/register'}
+                  onClick={() => navigate('/register')}
                 >
                   Começar Agora
                 </Button>
