@@ -5,8 +5,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Lock, Mail, User } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
@@ -71,15 +73,23 @@ const Register = () => {
                   />
                 </div>
               </div>
-              <Button variant="archive" className="w-full" size="lg">
+              <Button 
+                variant="archive" 
+                className="w-full" 
+                size="lg"
+                onClick={() => navigate('/dashboard')}
+              >
                 Criar Conta
               </Button>
               <div className="text-center">
                 <p className="text-sm text-muted-foreground">
                   Já tem uma conta?{" "}
-                  <a href="/login" className="text-primary hover:text-primary-glow transition-colors">
+                  <button 
+                    onClick={() => navigate('/login')}
+                    className="text-primary hover:text-primary-glow transition-colors"
+                  >
                     Entrar
-                  </a>
+                  </button>
                 </p>
               </div>
             </CardContent>
